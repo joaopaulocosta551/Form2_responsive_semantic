@@ -1,0 +1,262 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background: #D3D0DF;
+    display: flex;
+    overflow: hidden;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    background-color: white;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px; 
+}
+
+.card-left{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+   
+}
+
+.containe-circle-top{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-top{
+    width: 100px;
+    height: 100px;
+    background-color: #623EB8;
+    border-radius: 50%;
+    display: none;
+  }
+  .blur-top{
+    width: 150px;
+    height: 75px;
+    background: rgba(243, 244, 248, 0.3);
+    position: absolute;
+    margin-top: 76px;
+    backdrop-filter: blur(10px);
+    display: none;
+  }
+
+.title-circle{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.title-circle i {
+    margin-right: 5px;
+}
+
+.title-circle p {
+    font-weight: bold;
+}
+
+.title p{
+    font-size: 14px;
+    color: #a8a6a6;
+    font-weight: lighter;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    flex: 1;
+    margin-top: 30px;
+}
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container-input label{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.container-input input {
+    margin-top: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+.container-input input::-webkit-input-placeholder{
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-check{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    font-size: 12px;
+    align-items: center;
+}
+
+.container-label-check{
+    display: flex;
+    align-items: center;
+}
+
+.container-label-check label {
+    font-weight: bold;
+    color: #a8a6a6;
+}
+
+.container-check-a a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #A48BDC;
+}
+
+.button{
+   display: flex;
+   flex-direction: column;
+}
+
+.button button{
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+}
+
+.button button:first-child{
+    border:none;
+    background-color: #6941C6;
+    color: white;
+    cursor: pointer;
+}
+
+.button-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: solid 1px #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    
+}
+
+.button-google img {
+    color: black;
+    font-size: 1px;
+    width: 14px;
+    margin-right: 5px; 
+}
+
+.text-sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: #9b9898;
+}
+.text-sign-up a{
+    text-decoration: none;
+    color: #6941C6;
+
+}
+
+.title-footer{
+    align-items: center;
+    display: flex;
+    color: #ccc;
+    font-size: 12px;
+    margin:0 0 15px 15px;
+}
+
+.title-footer .copy{
+    margin: 5px;
+}
+
+
+.card-right{
+    background-color: #F3F5F9;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #623EB8;
+    border-radius: 50%;
+  }
+
+  
+  .blur{
+    width: 300px;
+    height: 150px;
+    background: rgba(243, 244, 248, 0.5);
+    position: absolute;
+    margin-top: 135px;
+    backdrop-filter: blur(15px);
+  }
+
+  @media screen and (max-width:900px){
+    .card-right{
+        display: none;
+    }
+    .title-circle{
+        display: none;
+    }
+    .title-footer{
+        display: none;
+    }
+    .container{
+        width: 80%;
+    }
+    .card-left{
+        width: 100%;
+        align-items: center;
+        justify-content: center; 
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .form{
+        width: 80%;
+    }
+    .circle-top, .blur-top{
+        display: block;
+        margin-bottom: 50px;
+    }
+  }
+
+
+  
+  
+  
+  
+  
